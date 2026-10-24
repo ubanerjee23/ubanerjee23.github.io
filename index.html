@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upasana Banerjee — AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Upasana Banerjee, an AI/ML engineer building multi-agent systems, GraphRAG pipelines and multilingual clinical AI." />
+  <meta name="author" content="Upasana Banerjee" />
+  <meta name="theme-color" content="#05070e" />
+  <meta property="og:title" content="Upasana Banerjee — AI/ML Engineer" />
+  <meta property="og:description" content="Multi-agent AI, GraphRAG and multilingual clinical systems. Based in Bengaluru, India." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <script>
+    // Hide animated elements before first paint, but only when motion is welcome.
+    // If the anime.js module never arrives, the timeout reveals the page again.
+    (function () {
+      var root = document.documentElement;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      root.classList.add("js");
+      window.setTimeout(function () {
+        if (!window.__animeReady) root.classList.remove("js");
+      }, 3000);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Upasana Banerjee",
+    "jobTitle": "AI/ML Engineer",
+    "email": "mailto:ubanerjee2001@gmail.com",
+    "telephone": "+91-8670756762",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressCountry": "IN"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Neotia Institute of Technology Management and Science"
+    },
+    "sameAs": [
+      "https://github.com/ubanerjee23",
+      "https://www.linkedin.com/in/upasana-banerjee-a83793214/"
+    ],
+    "knowsAbout": ["Multi-agent systems", "GraphRAG", "Large language models", "Machine learning", "Speech recognition"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">UB</span>
+        <span class="brand-text">upasana<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-cta" href="#contact">Let's talk</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            AI/ML Engineer · Bengaluru, India
+          </p>
+
+          <h1 class="hero-title">
+            <span class="hero-line">Upasana</span>
+            <span class="hero-line hero-line-accent">Banerjee</span>
+          </h1>
+
+          <p class="hero-lede">
+            I build <strong>multi-agent AI systems</strong> that turn complex, messy data into
+            clear decisions — from clinical diagnosis grounded in 68,000+ disease-symptom
+            relations to real-time, multilingual medical reports.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="assets/Upasana-Banerjee-Resume.pdf" download>
+              Download CV
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0 4-4m-4 4L6 9M4 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero-tags" aria-label="Core focus areas">
+            <li>Multi-agent systems</li>
+            <li>GraphRAG</li>
+            <li>LLM agents</li>
+            <li>Multilingual ASR</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card" aria-label="A stylised view of a clinical AI pipeline">
+            <div class="terminal-top">
+              <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="terminal-title">diagnose.py — clinical pipeline</span>
+            </div>
+            <div class="terminal-body">
+              <p class="term-line"><span class="tok-dim">$</span> <span class="tok-key">python</span> diagnose.py <span class="tok-dim">--patient</span> new</p>
+              <p class="term-line"><span class="tok-dim">&gt;</span> ingesting EHR <span class="tok-ok">✓</span></p>
+              <p class="term-line"><span class="tok-dim">&gt;</span> graphrag <span class="tok-val">68,000</span> relations</p>
+              <p class="term-line"><span class="tok-dim">&gt;</span> differential_dx <span class="tok-val">12</span> candidates</p>
+              <p class="term-line"><span class="tok-dim">&gt;</span> confidence <span class="tok-val">0.94</span> <span class="tok-ok">↑</span></p>
+              <p class="term-line term-success"><span class="tok-ok">✓</span> report generated in <span class="tok-val">4</span> languages</p>
+            </div>
+            <div class="pipeline" aria-hidden="true">
+              <span>EHR</span><i>→</i><span>medASR</span><i>→</i><span>med-GraphRAG</span><i>→</i><span class="pipeline-end">report</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-a" aria-hidden="true">
+            <span class="badge-value">68K+</span>
+            <span class="badge-label">symptom relations</span>
+          </div>
+          <div class="floating-badge badge-b" aria-hidden="true">
+            <span class="badge-value">4</span>
+            <span class="badge-label">languages supported</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats-strip" aria-label="Career highlights">
+          <div class="stat">
+            <span class="stat-value"><span data-count="68">68</span><span class="stat-suffix">K+</span></span>
+            <span class="stat-label">disease-symptom relations</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value"><span data-count="4">4</span></span>
+            <span class="stat-label">languages in production</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value"><span data-count="5">5</span></span>
+            <span class="stat-label">AI projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value"><span data-count="8.5" data-decimals="1">8.5</span></span>
+            <span class="stat-label">B.Tech GPA / 10</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <span class="scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>01 / About</p>
+          <h2 class="section-title" data-reveal>AI engineer with a bias for <span class="grad-text">shipping</span>.</h2>
+          <p class="section-lede" data-reveal>
+            I work where research meets real workflows — designing retrieval, reasoning and
+            speech systems that people can actually use.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p data-reveal>
+              At <strong>Healtether Health</strong>, I helped build a differential-diagnosis
+              system powered by a multi-agent framework and GraphRAG over 68,000 disease-symptom
+              relationships extracted from SNOMED CT, AIIMS Bhubaneswar and 20+ hospitals across
+              Tamil Nadu. I also helped cut the system's false positives by 1.2× through synthetic
+              oversampling of rare diseases.
+            </p>
+            <p data-reveal>
+              Later, I built a real-time doctor–patient report generator using Google's medASR
+              model and a medical GraphRAG layer, with multilingual support for Hindi, Bengali,
+              Tamil and Telugu. Before that, at <strong>Praxis Business School</strong>, I worked
+              across Hadoop, Spark and classical ML pipelines.
+            </p>
+            <p data-reveal>
+              Today I'm most at home building <strong>agentic systems</strong> — tool use,
+              retrieval, evaluation and graph-grounded reasoning — that make complex data
+              explainable and useful.
+            </p>
+          </div>
+
+          <aside class="focus-card" data-reveal aria-label="What I focus on">
+            <p class="focus-kicker">What I focus on</p>
+            <ul class="focus-list">
+              <li><span>01</span> Multi-agent orchestration</li>
+              <li><span>02</span> GraphRAG &amp; retrieval</li>
+              <li><span>03</span> Multilingual speech AI</li>
+              <li><span>04</span> Production ML &amp; MLOps</li>
+            </ul>
+            <p class="focus-note">Currently open to AI/ML roles and research collaborations.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>02 / Experience</p>
+          <h2 class="section-title" data-reveal>Where I've built and <span class="grad-text">learned</span>.</h2>
+        </header>
+
+        <ol class="timeline" data-reveal-group>
+          <li class="timeline-item reveal-item">
+            <span class="timeline-marker" aria-hidden="true"><span></span></span>
+            <article class="exp-card">
+              <header class="exp-head">
+                <div>
+                  <p class="exp-company">Healtether Health <span>· Chennai, India</span></p>
+                  <h3 class="exp-role">AI Intern</h3>
+                </div>
+                <p class="exp-date">Jan 2025 — Jan 2026</p>
+              </header>
+              <ul class="exp-points">
+                <li>
+                  Helped build a clinical diagnostic system for patient differential diagnosis
+                  using a multi-agent framework with GraphRAG over <strong>68,000 disease-symptom
+                  relationships</strong> extracted from SNOMED CT, AIIMS Bhubaneswar and 20+
+                  hospitals in Tamil Nadu.
+                </li>
+                <li>
+                  Reduced false positives of the diagnostic system by <strong>1.2×</strong> through
+                  synthetic oversampling of undersampled rare diseases.
+                </li>
+                <li>
+                  Built a doctor–patient real-time report generation system using Google's
+                  <strong>medASR</strong> model and disease-symptom med-GraphRAG, with multilingual
+                  support for Hindi, Bengali, Tamil and Telugu.
+                </li>
+              </ul>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>GraphRAG</li>
+                <li>Multi-agent</li>
+                <li>medASR</li>
+                <li>Neo4j</li>
+                <li>LLMs</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal-item">
+            <span class="timeline-marker" aria-hidden="true"><span></span></span>
+            <article class="exp-card">
+              <header class="exp-head">
+                <div>
+                  <p class="exp-company">Praxis Business School <span>· Kolkata, India</span></p>
+                  <h3 class="exp-role">Data Science Intern</h3>
+                </div>
+                <p class="exp-date">May 2022 — Aug 2022</p>
+              </header>
+              <ul class="exp-points">
+                <li>Gained practical knowledge in Hadoop, Big Data and MapReduce.</li>
+                <li>Created a blog post and a Colab notebook demonstrating MapReduce with Python.</li>
+                <li>Implemented machine learning pipelines using Spark (Transformers, Estimators, Logistic Regression).</li>
+                <li>Built complex pipelines combining Logistic Regression, Random Forest and Gradient Boosting.</li>
+              </ul>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Hadoop</li>
+                <li>Spark</li>
+                <li>MapReduce</li>
+                <li>Scikit-learn</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>03 / Selected work</p>
+          <h2 class="section-title" data-reveal>Projects &amp; <span class="grad-text">experiments</span>.</h2>
+          <p class="section-lede" data-reveal>
+            Retrieval, agents and applied machine learning — each built to answer a question
+            I couldn't stop thinking about.
+          </p>
+        </header>
+
+        <div class="projects-grid" data-reveal-group>
+          <article class="project-card reveal-item" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">01</span>
+              <span class="project-kind">Computer Vision · RecSys</span>
+            </div>
+            <h3 class="project-title">Personalised Fashion Recommendation System</h3>
+            <p class="project-desc">
+              A deep-learning fashion recommender that suggests clothing from an image input.
+              Uses CNN and transfer learning with ResNet on ImageNet features, plus a
+              content-based filtering model to surface visually similar items.
+            </p>
+            <ul class="tag-row" aria-label="Technologies used">
+              <li>CNN</li>
+              <li>ResNet</li>
+              <li>Transfer learning</li>
+              <li>Content-based filtering</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal-item" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">02</span>
+              <span class="project-kind">Agents · Automation</span>
+            </div>
+            <h3 class="project-title">Agentic Web Browser</h3>
+            <p class="project-desc">
+              An AI-powered browsing agent that accepts a website URL and performs user-defined
+              tasks — research, navigation and form filling — built with smolagents, FastAPI and
+              the Helium headless browser.
+            </p>
+            <ul class="tag-row" aria-label="Technologies used">
+              <li>smolagents</li>
+              <li>FastAPI</li>
+              <li>Helium</li>
+              <li>Tool use</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal-item" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">03</span>
+              <span class="project-kind">LLM Analytics</span>
+            </div>
+            <h3 class="project-title">TicketBot</h3>
+            <p class="project-desc">
+              An end-to-end pipeline for analysing app reviews, using LLM-powered topic
+              discovery, clustering and trend analysis to turn raw feedback into product signals.
+            </p>
+            <ul class="tag-row" aria-label="Technologies used">
+              <li>LLMs</li>
+              <li>Topic discovery</li>
+              <li>Clustering</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal-item" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">04</span>
+              <span class="project-kind">Web Agents · Healthcare</span>
+            </div>
+            <h3 class="project-title">Medicine Price Checker</h3>
+            <p class="project-desc">
+              A medicine price checker for Indian marketplaces that finds cheaper alternatives
+              based on the primary drug component, powered by the TinyFish Web Agent.
+            </p>
+            <ul class="tag-row" aria-label="Technologies used">
+              <li>TinyFish</li>
+              <li>Web agents</li>
+              <li>Scraping</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal-item" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">05</span>
+              <span class="project-kind">RAG · Multimodal</span>
+            </div>
+            <h3 class="project-title">VideoRAG</h3>
+            <p class="project-desc">
+              Retrieval-augmented generation over YouTube videos with structural and semantic
+              filters, using Qdrant as a multimodal embedding store for grounded answers.
+            </p>
+            <ul class="tag-row" aria-label="Technologies used">
+              <li>RAG</li>
+              <li>Qdrant</li>
+              <li>Multimodal embeddings</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>04 / Toolkit</p>
+          <h2 class="section-title" data-reveal>The tools I <span class="grad-text">reach for</span>.</h2>
+        </header>
+
+        <div class="skills-grid" data-reveal-group>
+          <article class="skill-card reveal-item">
+            <header class="skill-head">
+              <span class="skill-num">01</span>
+              <h3>Languages</h3>
+            </header>
+            <ul class="chips">
+              <li class="chip">Python</li>
+              <li class="chip">C / C++</li>
+              <li class="chip">R</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal-item">
+            <header class="skill-head">
+              <span class="skill-num">02</span>
+              <h3>Backend &amp; Databases</h3>
+            </header>
+            <ul class="chips">
+              <li class="chip">FastAPI</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Neo4j</li>
+              <li class="chip">ChromaDB</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal-item">
+            <header class="skill-head">
+              <span class="skill-num">03</span>
+              <h3>Machine Learning &amp; AI</h3>
+            </header>
+            <ul class="chips">
+              <li class="chip">TensorFlow</li>
+              <li class="chip">PyTorch</li>
+              <li class="chip">LangChain</li>
+              <li class="chip">Hugging Face</li>
+              <li class="chip">vLLM</li>
+              <li class="chip">scikit-learn</li>
+              <li class="chip">smolagents</li>
+              <li class="chip">LangGraph</li>
+              <li class="chip">OpenAI Agent SDK</li>
+              <li class="chip">TRL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal-item">
+            <header class="skill-head">
+              <span class="skill-num">04</span>
+              <h3>Cloud &amp; Data Engineering</h3>
+            </header>
+            <ul class="chips">
+              <li class="chip">AWS</li>
+              <li class="chip">BigQuery</li>
+              <li class="chip">Terraform</li>
+              <li class="chip">Databricks</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal-item">
+            <header class="skill-head">
+              <span class="skill-num">05</span>
+              <h3>DevOps</h3>
+            </header>
+            <ul class="chips">
+              <li class="chip">Docker</li>
+              <li class="chip">Kubernetes</li>
+              <li class="chip">GitHub Actions</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & honors -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>05 / Education</p>
+          <h2 class="section-title" data-reveal>Foundations and <span class="grad-text">recognition</span>.</h2>
+        </header>
+
+        <div class="edu-grid" data-reveal-group>
+          <article class="edu-card reveal-item">
+            <p class="edu-kicker">B.Tech · 2019 — 2023</p>
+            <h3 class="edu-degree">Electronics &amp; Communication Engineering</h3>
+            <p class="edu-school">Neotia Institute of Technology Management and Science<br />West Bengal, India</p>
+            <div class="gpa-row">
+              <span class="gpa-value">8.5<span>/10</span></span>
+              <span class="gpa-label">Cumulative GPA</span>
+            </div>
+          </article>
+
+          <article class="honors-card reveal-item">
+            <p class="edu-kicker">Hackathons</p>
+            <ul class="honor-list">
+              <li>
+                <span class="honor-rank">2nd</span>
+                <div>
+                  <h3>Amazon ML Hackathon 2021</h3>
+                  <p>Hosted on HackerEarth</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-rank">2nd</span>
+                <div>
+                  <h3>NITMAS Sankalpa Hackathon 2022</h3>
+                  <p>Built an emotional sentiment analysis system from real-time voice transcription.</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <p class="eyebrow">06 / Contact</p>
+          <h2 class="contact-title">Let's build something <span class="grad-text">intelligent</span>.</h2>
+          <p class="contact-lede">
+            I'm open to AI/ML engineering roles, applied research and ambitious agentic
+            products. If that sounds like your team, my inbox is open.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:ubanerjee2001@gmail.com">
+              ubanerjee2001@gmail.com
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="btn btn-ghost" type="button" data-copy-email data-email="ubanerjee2001@gmail.com">
+              Copy email
+            </button>
+          </div>
+
+          <ul class="social-links" aria-label="Social profiles">
+            <li>
+              <a class="social-link" href="https://github.com/ubanerjee23" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+                <span>GitHub</span>
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/upasana-banerjee-a83793214/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                </svg>
+                <span>LinkedIn</span>
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="contact-links">
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918670756762">+91 86707 56762</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span>Bengaluru, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Upasana Banerjee. Built with care, caffeine and <a href="https://animejs.com" target="_blank" rel="noopener noreferrer">anime.js</a>.</p>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="js/ui.js" defer></script>
+  <script type="module" src="js/animations.js"></script>
+</body>
+</html>
