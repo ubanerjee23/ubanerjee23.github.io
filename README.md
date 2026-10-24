@@ -6,14 +6,12 @@ site with hand-written HTML, CSS and JavaScript, animated with
 
 ## Live site
 
-The site is deployed with GitHub Pages from the `main` branch (root folder):
+The site is deployed with GitHub Pages from the `main` branch (root folder) of the
+user site repository `ubanerjee23.github.io`:
 
 ```
-https://ubanerjee23.github.io/ubanerjee23/
+https://ubanerjee23.github.io/
 ```
-
-> If the repository is renamed to `ubanerjee23.github.io`, the site will be served at
-> `https://ubanerjee23.github.io/` instead.
 
 To redeploy, just push to `main` — Pages rebuilds automatically within a minute or two.
 
