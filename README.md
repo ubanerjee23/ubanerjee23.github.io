@@ -6,14 +6,16 @@ site with hand-written HTML, CSS and JavaScript, animated with
 
 ## Live site
 
-Once GitHub Pages is enabled, the site will be available at:
+The site is deployed with GitHub Pages from the `main` branch (root folder):
 
 ```
-https://ubanerjee23.github.io/website/
+https://ubanerjee23.github.io/ubanerjee23/
 ```
 
 > If the repository is renamed to `ubanerjee23.github.io`, the site will be served at
 > `https://ubanerjee23.github.io/` instead.
+
+To redeploy, just push to `main` — Pages rebuilds automatically within a minute or two.
 
 ## Stack
 
